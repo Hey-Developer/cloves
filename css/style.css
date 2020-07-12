@@ -1,628 +1,790 @@
 @charset "UTF-8";
+
 /* * * * * * * * * * * Reset CSS * * * * * * * * * * */
+
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
+
 /* * * * * X * * * * * Reset CSS * * * * * X * * * * */
+
+
 /* >>>>>>>>>>>>> Global CSS >>>>>>>>>>>>> */
+
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 li {
-  list-style: none;
+    list-style: none;
 }
 
 a {
-  color: white;
-  text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
+
 a:hover {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 p {
-  font-size: 1rem;
-  line-height: 1.6;
-  font-weight: 400;
-  color: black;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: black;
 }
 
 h1 {
-  font-size: 1.8rem;
-  font-weight: 500;
-  margin: 1.25rem 0 1rem 0;
-  line-height: 1.1;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 1.25rem 0 1rem 0;
+    line-height: 1.1;
 }
 
 h2 {
-  font-size: 1rem;
-  margin: 1.25rem 0 1rem 0;
-  font-weight: bold;
-  line-height: 1.1;
-  word-spacing: 4px;
+    font-size: 1rem;
+    margin: 1.25rem 0 1rem 0;
+    font-weight: bold;
+    line-height: 1.1;
+    word-spacing: 4px;
 }
+
 
 /* >>>>> X >>>>> Global CSS >>>>> X >>>>> */
+
+
 /* >>>>>>>>>>>>> Header CSS >>>>>>>>>>>>> */
+
 header {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background: linear-gradient(45deg, rgba(20, 124, 243, 0.3), rgba(31, 199, 241, 0.3)), url("../assets/BG-2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  -webkit-clip-path: polygon(100% 0%, 100% 75%, 50% 100%, 0 75%, 0 0);
-          clip-path: polygon(100% 0%, 100% 75%, 50% 100%, 0 75%, 0 0);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, rgba(20, 124, 243, 0.3), rgba(31, 199, 241, 0.3)), url("../assets/BG-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    -webkit-clip-path: polygon(100% 0%, 100% 75%, 50% 100%, 0 75%, 0 0);
+    clip-path: polygon(100% 0%, 100% 75%, 50% 100%, 0 75%, 0 0);
 }
+
 header::before {
-  content: "";
-  position: absolute;
-  top: 0%;
-  bottom: 0%;
-  left: 0;
-  right: 0;
-  opacity: 0.3;
-  z-index: -1;
-  background: linear-gradient(to right, #1e5799 0%, #3ccdbce5 0%, #16c9f6 100%);
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    opacity: 0.3;
+    z-index: -1;
+    background: linear-gradient(to right, #1e5799 0%, #3ccdbce5 0%, #16c9f6 100%);
 }
+
 header .navbar::before {
-  content: "";
-  position: absolute;
-  top: 0%;
-  bottom: 0%;
-  left: 0;
-  right: 0;
-  opacity: 0.3;
-  z-index: -1;
-  background: linear-gradient(to right, #1e5799 0%, #3ccdbc 0%, #16c9f6 100%);
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    opacity: 0.3;
+    z-index: -1;
+    background: linear-gradient(to right, #1e5799 0%, #3ccdbc 0%, #16c9f6 100%);
 }
+
 header .navbar .nav-item .nav-link {
-  padding: 0.2rem 0 !important;
-  margin: 1rem !important;
-  display: inline-block;
-  color: white;
-  font-weight: bold;
-  position: relative;
+    padding: 0.2rem 0 !important;
+    margin: 1rem !important;
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    position: relative;
 }
-header .navbar .nav-item .nav-link::before, header .navbar .nav-item .nav-link::after {
-  content: "";
-  position: absolute;
-  left: 0px;
-  height: 3px;
-  width: 100%;
-  background: white;
-  transform: scaleX(0);
-  transition: all 0.3s ease;
-}
-header .navbar .nav-item .nav-link::before {
-  bottom: 0px;
-  transform-origin: left;
-}
+
+header .navbar .nav-item .nav-link::before,
 header .navbar .nav-item .nav-link::after {
-  top: 0px;
-  transform-origin: right;
+    content: "";
+    position: absolute;
+    left: 0px;
+    height: 3px;
+    width: 100%;
+    background: white;
+    transform: scaleX(0);
+    transition: all 0.3s ease;
 }
-header .navbar .nav-item .nav-link:hover::before, header .navbar .nav-item .nav-link:hover::after {
-  transform: scaleX(1);
+
+header .navbar .nav-item .nav-link::before {
+    bottom: 0px;
+    transform-origin: left;
 }
+
+header .navbar .nav-item .nav-link::after {
+    top: 0px;
+    transform-origin: right;
+}
+
+header .navbar .nav-item .nav-link:hover::before,
+header .navbar .nav-item .nav-link:hover::after {
+    transform: scaleX(1);
+}
+
 header .navbar-toggler {
-  outline: none !important;
+    outline: none !important;
 }
+
 header .navbar-toggler span i {
-  outline: none;
-  font-size: 1.5rem;
-  color: white;
+    outline: none;
+    font-size: 1.5rem;
+    color: white;
 }
+
 header .menu-btn {
-  position: relative;
-  border: none;
-  outline: none;
-  height: 20px;
-  width: 28px;
-  padding: 0.4rem;
-  cursor: pointer;
-  background: transparent;
-  transition: all 0.3s ease;
+    position: relative;
+    border: none;
+    outline: none;
+    height: 20px;
+    width: 28px;
+    padding: 0.4rem;
+    cursor: pointer;
+    background: transparent;
+    transition: all 0.3s ease;
 }
+
 header .menu-btn__burger {
-  position: absolute;
-  right: 0;
-  top: 0.5rem;
-  width: 28px;
-  height: 3px;
-  background: white;
-  transition: all 0.3s ease;
+    position: absolute;
+    right: 0;
+    top: 0.5rem;
+    width: 28px;
+    height: 3px;
+    background: white;
+    transition: all 0.3s ease;
 }
+
 header .menu-btn__burger::before {
-  content: "";
-  position: absolute;
-  top: -8px;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background: white;
-  transition: all 0.3s ease;
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: white;
+    transition: all 0.3s ease;
 }
+
 header .menu-btn__burger::after {
-  content: "";
-  position: absolute;
-  top: 8px;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background: white;
-  transition: all 0.3s ease;
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: white;
+    transition: all 0.3s ease;
 }
+
 header .menu-btn__burger.open {
-  transform: rotate(360deg);
-  background: transparent;
+    transform: rotate(360deg);
+    background: transparent;
 }
+
 header .menu-btn__burger.open::before {
-  transform: rotate(45deg) translate(5px, 8px);
+    transform: rotate(45deg) translate(5px, 8px);
 }
+
 header .menu-btn__burger.open::after {
-  width: 100%;
-  transform: rotate(-45deg) translate(3px, -7px);
+    width: 100%;
+    transform: rotate(-45deg) translate(3px, -7px);
 }
+
 header .header-section {
-  width: 100%;
-  height: inherit;
-  color: white;
+    width: 100%;
+    height: inherit;
+    color: white;
 }
+
 header .header-section .center-div {
-  width: 100%;
-  height: 100%;
-  text-align: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
 }
+
 header .header-section .center-div h1 {
-  font-size: 3rem;
-  letter-spacing: 0.5rem;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
 }
+
 header .header-section .center-div P {
-  font-size: 1.3rem;
-  letter-spacing: 0.3rem;
-  color: white;
-  padding: 0.625rem 0 1.25rem 0;
+    font-size: 1.3rem;
+    letter-spacing: 0.3rem;
+    color: white;
+    padding: 0.625rem 0 1.25rem 0;
 }
+
 header .header-section .center-div .cta a {
-  border: 1px solid white;
-  padding: 0.9rem 2.1rem;
-  outline: none;
-  font-weight: 400;
-  line-height: 1.4;
-  border-radius: 6.25rem;
-  text-align: center;
-  transition: 0.5s;
-  margin: 0 0.3rem;
+    border: 1px solid white;
+    padding: 0.9rem 2.1rem;
+    outline: none;
+    font-weight: 400;
+    line-height: 1.4;
+    border-radius: 6.25rem;
+    text-align: center;
+    transition: 0.5s;
+    margin: 0 0.3rem;
 }
+
 header .header-section .center-div .cta a:hover {
-  color: #50d1c0;
-  background: white;
-  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.3);
+    color: #50d1c0;
+    background: white;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.3);
 }
+
 
 /* >>>>> X >>>>> Header CSS >>>>> X >>>>> */
+
+
 /* >>>>>>>>>>>>> Feature Section CSS >>>>>>>>>>>>> */
+
 main .features {
-  width: 100%;
-  height: auto;
-  margin: 6.25rem 0;
+    width: 100%;
+    height: auto;
+    margin: 6.25rem 0;
 }
+
 main .features .feature-card {
-  background: white;
-  border: 1px solid #eee;
-  padding: 2rem !important;
-  border-radius: 0.4rem;
-  transition: all 0.3s ease;
+    background: white;
+    border: 1px solid #eee;
+    padding: 2rem !important;
+    border-radius: 0.4rem;
+    transition: all 0.3s ease;
 }
+
 main .features .feature-card h2 {
-  font-size: 1.2rem;
+    font-size: 1.2rem;
 }
+
 main .features .feature-card:hover {
-  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.3);
-  transform: translateY(-20px);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.3);
+    transform: translateY(-20px);
 }
+
 main .features .feature-card:hover span i,
 main .features .feature-card:hover h2 {
-  color: #50d1c0;
+    color: #50d1c0;
 }
+
 
 /* >>>>> X >>>>> Feature Section CSS >>>>> X >>>>> */
+
+
 /* >>>>>>>>>>>>> Services Offer Section CSS >>>>>>>>>>>>> */
+
 main .services-offer {
-  background: #f7f7f9;
-  padding: 3.25rem 0;
-  margin-bottom: 3.25rem;
+    background: #f7f7f9;
+    padding: 3.25rem 0;
+    margin-bottom: 3.25rem;
 }
+
 main .services-offer .headings {
-  margin-bottom: 3.25rem;
+    margin-bottom: 3.25rem;
 }
+
 main .services-offer .names h1 {
-  color: #2e2e2e;
-  font-size: 1.1rem;
-  font-weight: bold;
+    color: #2e2e2e;
+    font-size: 1.1rem;
+    font-weight: bold;
 }
+
 main .services-offer .service-icons {
-  color: #50d1c0;
+    color: #50d1c0;
 }
+
 main .services-offer .progress {
-  height: 0.8rem !important;
-  margin-bottom: 2rem !important;
+    height: 0.8rem !important;
+    margin-bottom: 2rem !important;
 }
+
 
 /* >>>>> X >>>>> Services Offer Section CSS >>>>> X >>>>> */
+
+
 /* >>>>>>>>>>>>> Website Counter Section CSS >>>>>>>>>>>>> */
+
 main .website-counter {
-  margin: 6.25rem 0;
+    margin: 6.25rem 0;
 }
+
 main .website-counter .headings {
-  padding: 2rem 0 !important;
+    padding: 2rem 0 !important;
 }
+
 main .website-counter .count-div {
-  padding: 2rem 0 !important;
+    padding: 2rem 0 !important;
 }
+
 main .website-counter .count-div .counter-card {
-  padding: 1rem 2rem;
-  border: 1px solid #eee;
-  border-radius: 0.9rem;
-  transition: all 0.3s linear;
+    padding: 1rem 2rem;
+    border: 1px solid #eee;
+    border-radius: 0.9rem;
+    transition: all 0.3s linear;
 }
+
 main .website-counter .count-div .counter-card span i {
-  margin-bottom: 0.8rem;
+    margin-bottom: 0.8rem;
 }
+
 main .website-counter .count-div .counter-card h1 {
-  font-size: 2.1rem;
-  font-weight: bold;
+    font-size: 2.1rem;
+    font-weight: bold;
 }
+
 main .website-counter .count-div .counter-card:hover {
-  transform: translateY(-1rem);
-  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.3);
+    transform: translateY(-1rem);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.3);
 }
+
 main .website-counter .count-div .counter-card:hover h1 {
-  color: #50d1c0;
+    color: #50d1c0;
 }
+
 main .website-counter .count-div .counter-card:hover span i {
-  color: #50d1c0;
+    color: #50d1c0;
 }
+
 
 /* >>>>> X >>>>> Website Counter Section CSS >>>>> X >>>>> */
+
+
 /* >>>>>>>>>>>>> Our Pricing Section CSS >>>>>>>>>>>>> */
+
 main .our-price {
-  width: 100%;
-  height: 100vh;
-  padding: 2rem;
-  position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 2rem;
+    position: relative;
 }
+
 main .our-price:before {
-  content: "";
-  position: absolute;
-  top: 0%;
-  bottom: 0%;
-  left: 0;
-  right: 0;
-  z-index: -1;
-  background: linear-gradient(160deg, #16c9f6 55%, #fff 0%);
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background: linear-gradient(160deg, #16c9f6 55%, #fff 0%);
 }
+
 main .our-price .heading {
-  margin-bottom: 3.25rem !important;
+    margin-bottom: 3.25rem !important;
 }
+
 main .our-price .heading h1 {
-  font-weight: bolder;
+    font-weight: bolder;
 }
+
 main .our-price .active {
-  transform: translateY(-1.25rem);
+    transform: translateY(-1.25rem);
 }
+
 main .our-price .card {
-  transition: all 0.4s ease;
+    transition: all 0.4s ease;
 }
+
 main .our-price .card .card-header {
-  font-size: 1.6rem;
-  font-weight: bold;
-  background: white !important;
-  padding: 1.5rem 0.7rem !important;
+    font-size: 1.6rem;
+    font-weight: bold;
+    background: white !important;
+    padding: 1.5rem 0.7rem !important;
 }
+
 main .our-price .card .card-body {
-  padding: 1.8rem 0 !important;
+    padding: 1.8rem 0 !important;
 }
+
 main .our-price .card .card-body .card-title {
-  font-size: 1.2rem;
-  font-weight: bold;
-  transition: all 0.3s linear;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s linear;
 }
+
 main .our-price .card .card-body .card-title .price {
-  transition: all 0.3s linear;
-  font-size: 2.3rem !important;
-  font-weight: bold;
+    transition: all 0.3s linear;
+    font-size: 2.3rem !important;
+    font-weight: bold;
 }
+
 main .our-price .card .card-body li {
-  margin: 0.7rem 0;
-  font-weight: 400;
-  font-size: 0.9rem;
-  color: #606060;
+    margin: 0.7rem 0;
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: #606060;
 }
+
 main .our-price .card .card-footer {
-  background: white !important;
-  padding: 1.9rem 0 !important;
+    background: white !important;
+    padding: 1.9rem 0 !important;
 }
+
 main .our-price .card .card-footer a {
-  border: 1px solid #50d1c0;
-  padding: 0.9rem 2.1rem;
-  outline: none;
-  font-weight: 400;
-  line-height: 1.4;
-  border-radius: 6.25rem;
-  text-align: center;
-  transition: 0.5s;
-  margin: 0 0.3rem;
-  color: #50d1c0;
+    border: 1px solid #50d1c0;
+    padding: 0.9rem 2.1rem;
+    outline: none;
+    font-weight: 400;
+    line-height: 1.4;
+    border-radius: 6.25rem;
+    text-align: center;
+    transition: 0.5s;
+    margin: 0 0.3rem;
+    color: #50d1c0;
 }
+
 main .our-price .card:hover {
-  transform: translateY(-1.25rem);
-  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.3);
+    transform: translateY(-1.25rem);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.3);
 }
+
 main .our-price .card:hover .card-header,
 main .our-price .card:hover .card-body .price {
-  color: #50d1c0;
+    color: #50d1c0;
 }
+
 main .our-price .card:hover .card-footer a {
-  background: #50d1c0;
-  color: white;
-  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.3);
+    background: #50d1c0;
+    color: white;
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.3);
 }
+
 
 /* >>>>> X >>>>> Our Pricing Section CSS >>>>> X >>>>> */
+
+
 /* >>>>>>>>>>>>> Our Client Section CSS >>>>>>>>>>>>> */
+
 main .our-clients {
-  width: 100%;
-  height: 100vh;
+    width: 100%;
+    height: 100vh;
 }
+
 main .our-clients .headings {
-  margin-bottom: 2.9rem !important;
+    margin-bottom: 2.9rem !important;
 }
+
 main .our-clients .headings h1 {
-  font-size: 1.9rem;
+    font-size: 1.9rem;
 }
+
 main .our-clients .client-card {
-  text-align: center;
-  border: 1px solid #eee;
-  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
-  border-radius: 2px !important;
-  transition: all 0.3s linear;
+    text-align: center;
+    border: 1px solid #eee;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 2px !important;
+    transition: all 0.3s linear;
 }
+
 main .our-clients .client-card:hover {
-  background: #16c9f6;
+    background: #16c9f6;
 }
+
 main .our-clients .client-card:hover .card-text,
 main .our-clients .client-card:hover h2 {
-  color: white !important;
+    color: white !important;
 }
+
 main .our-clients .client-card a {
-  position: relative;
+    position: relative;
 }
+
 main .our-clients .client-card a img {
-  width: 7rem !important;
-  height: 7rem !important;
-  border-radius: 50%;
-  margin-top: 1.3rem;
+    width: 7rem !important;
+    height: 7rem !important;
+    border-radius: 50%;
+    margin-top: 1.3rem;
 }
+
 main .our-clients .client-card a::after {
-  content: "";
-  font-family: fontAwesome;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-  color: white;
-  position: absolute;
-  top: 60%;
-  left: 55%;
-  background: linear-gradient(to right, #1e5799d5 0%, #3ccdbce5 0%, #16c9f6e3 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    content: "";
+    font-family: fontAwesome;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    top: 60%;
+    left: 55%;
+    background: linear-gradient(to right, #1e5799d5 0%, #3ccdbce5 0%, #16c9f6e3 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 main .our-clients .client-card h1 {
-  font-weight: 800;
+    font-weight: 800;
 }
+
 main .our-clients .client-card h2 {
-  font-weight: 600;
-  letter-spacing: 0.1rem;
-  margin-top: -0.1rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    margin-top: -0.1rem;
 }
+
 main .our-clients .carousel-indicators {
-  position: absolute;
-  right: 0 !important;
-  bottom: -3.5rem !important;
+    position: absolute;
+    right: 0 !important;
+    bottom: -3.5rem !important;
 }
+
 main .our-clients .carousel-indicators li {
-  background-color: #16c9f6 !important;
+    background-color: #16c9f6 !important;
 }
 
+
 /* >>>>> X >>>>> Our Client Section CSS >>>>> X >>>>> */
+
+
 /* >>>>>>>>>>>>> Our Client Section CSS >>>>>>>>>>>>> */
+
 main .contact-us {
-  width: 100%;
-  height: 95vh;
-  padding: 5rem 0 !important;
-  position: relative;
-}
-main .contact-us::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-  background: linear-gradient(330deg, #16c9f6 55%, white 0%);
-}
-main .contact-us .headings {
-  margin-bottom: 3rem;
-}
-main .contact-us #sub-btn {
-  border: 2px solid white;
-  padding: 0.9rem 2.1rem;
-  outline: none;
-  font-weight: 600;
-  line-height: 1.4;
-  border-radius: 6.25rem;
-  text-align: center;
-  transition: 0.5s;
-  margin: 0 0.3rem;
-  background-color: transparent;
-  color: white;
-}
-main .contact-us #sub-btn:hover {
-  color: #50d1c0;
-  background: white;
-  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.3);
-}
-main .contact-us ::placeholder {
-  font-size: 0.9rem;
+    width: 100%;
+    height: 95vh;
+    padding: 5rem 0 !important;
+    position: relative;
 }
 
+main .contact-us::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background: linear-gradient(330deg, #16c9f6 55%, white 0%);
+}
+
+main .contact-us .headings {
+    margin-bottom: 3rem;
+}
+
+main .contact-us #sub-btn {
+    border: 2px solid white;
+    padding: 0.9rem 2.1rem;
+    outline: none;
+    font-weight: 600;
+    line-height: 1.4;
+    border-radius: 6.25rem;
+    text-align: center;
+    transition: 0.5s;
+    margin: 0 0.3rem;
+    background-color: transparent;
+    color: white;
+}
+
+main .contact-us #sub-btn:hover {
+    color: #50d1c0;
+    background: white;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.3);
+}
+
+main .contact-us ::placeholder {
+    font-size: 0.9rem;
+}
+
+
 /* >>>>> X >>>>> Our Client Section CSS >>>>> X >>>>> */
+
+
 /* >>>>>>>>>>>>> News Letter  Section CSS >>>>>>>>>>>>> */
+
 main .newsletter {
-  width: 100%;
-  height: auto;
-  margin: 6rem auto;
+    width: 100%;
+    height: auto;
+    margin: 6rem auto;
 }
+
 main .newsletter .headings {
-  margin-bottom: 2.6rem;
+    margin-bottom: 2.6rem;
 }
+
 main .newsletter .news-letter-email {
-  border-radius: 6.25rem 0 0 6.25rem !important;
-  padding: 1.3rem !important;
-  min-width: 9.3rem;
-  min-height: 3.7rem;
+    border-radius: 6.25rem 0 0 6.25rem !important;
+    padding: 1.3rem !important;
+    min-width: 9.3rem;
+    min-height: 3.7rem;
 }
+
 main .newsletter .btn {
-  border-radius: 0 6.25rem 6.25rem 0 !important;
-  color: white !important;
-  background: #16c9f6 !important;
-  padding: 0.9rem !important;
-  min-width: 10rem !important;
-  font-weight: 600;
-  letter-spacing: 0.1rem;
-  font-size: 0.9rem;
-  transition: all 0.3s linear;
+    border-radius: 0 6.25rem 6.25rem 0 !important;
+    color: white !important;
+    background: #16c9f6 !important;
+    padding: 0.9rem !important;
+    min-width: 10rem !important;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    font-size: 0.9rem;
+    transition: all 0.3s linear;
 }
+
 main .newsletter .btn:hover {
-  background: #08a9d1 !important;
+    background: #08a9d1 !important;
 }
+
 main .newsletter ::placeholder {
-  font-size: 0.9rem;
+    font-size: 0.9rem;
 }
+
 
 /* >>>>> X >>>>> News Letter  Section CSS >>>>> X >>>>> */
+
+
 /* >>>>>>>>>>>>> Footer  Section CSS >>>>>>>>>>>>> */
+
 footer {
-  width: 100%;
-  height: auto;
-  padding: 5rem 0 1rem 0;
-  background: linear-gradient(to right, #1e5799 0%, #3ccdbc 0%, #16c9f6 100%);
-  position: relative;
+    width: 100%;
+    height: auto;
+    padding: 5rem 0 1rem 0;
+    background: linear-gradient(to right, #1e5799 0%, #3ccdbc 0%, #16c9f6 100%);
+    position: relative;
 }
+
 footer h3 {
-  font-weight: bold;
-  font-size: 1.4rem;
-  margin-bottom: 1.5rem;
-  color: white;
-  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    color: white;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 }
+
 footer P {
-  color: white;
-  font-size: 0.95rem;
+    color: white;
+    font-size: 0.95rem;
 }
+
 footer ul li {
-  font-size: 0.9rem;
-  line-height: 1.7;
-  font-weight: 400;
-  text-transform: capitalize;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    font-weight: 400;
+    text-transform: capitalize;
 }
+
 footer ul li a:hover {
-  color: black;
+    color: black;
 }
+
 footer .news-letter-email {
-  border-radius: 6.25rem 0 0 6.25rem !important;
-  padding: 1.3rem !important;
+    border-radius: 6.25rem 0 0 6.25rem !important;
+    padding: 1.3rem !important;
 }
+
 footer .btn {
-  border-radius: 0 6.25rem 6.25rem 0 !important;
-  color: white !important;
-  background: black !important;
-  font-weight: 600;
-  letter-spacing: 0.1rem;
-  font-size: 0.9rem;
-  transition: all 0.3s linear;
+    border-radius: 0 6.25rem 6.25rem 0 !important;
+    color: white !important;
+    background: black !important;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    font-size: 0.9rem;
+    transition: all 0.3s linear;
 }
+
 footer .btn:hover {
-  background: rgba(0, 0, 0, 0.7) !important;
+    background: rgba(0, 0, 0, 0.7) !important;
 }
+
 footer ::placeholder {
-  font-size: 0.9rem;
+    font-size: 0.9rem;
 }
+
 footer .copyright {
-  margin-bottom: -1rem;
+    margin-bottom: -1rem;
 }
+
 footer .copyright i {
-  margin: 0 0.3rem -1rem;
-  font-size: 1.5rem;
-  cursor: pointer;
+    margin: 0 0.3rem -1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
+
 footer .copyright i:hover {
-  color: #cd201f;
+    color: #cd201f;
 }
+
 footer #top-btn {
-  font-size: 1.1rem;
-  position: fixed;
-  bottom: 1.25rem;
-  right: 2.7rem;
-  z-index: 99;
-  border: none;
-  color: white;
-  background: linear-gradient(to right, #1e5799 0%, #3ccdbc 0%, #16c9f6 100%);
-  padding: 0.7rem 0.8rem;
-  border-radius: 50%;
+    font-size: 1.1rem;
+    position: fixed;
+    bottom: 1.25rem;
+    right: 2.7rem;
+    z-index: 99;
+    border: none;
+    color: white;
+    background: linear-gradient(to right, #1e5799 0%, #3ccdbc 0%, #16c9f6 100%);
+    padding: 0.7rem 0.8rem;
+    border-radius: 50%;
 }
+
 footer #top-btn:hover {
-  background: #2e2e2e;
+    background: #2e2e2e;
 }
+
 
 /* >>>>> X >>>>> Footer  Section CSS >>>>> X >>>>> */
-/* >>>>>>>>>>>>> Footer  Section CSS >>>>>>>>>>>>> */
-/* > ------------ Viewport greater than or equal to 1200px | Extra large devices (large laptops and desktops, 1200px and up)------------ */
-/* > -----X------ Viewport greater than or equal to 1200px | Extra large devices (large laptops and desktops, 1200px and up)------X----- */
-/* -> ------------- Viewport less than or equal to 1200px | Large devices (laptops/desktops, 1200px and down)------------- */
-/* -> ------X------ Viewport less than or equal to 1200px | Large devices (laptops/desktops, 1200px and down)------X------ */
-/* > ------------- Viewport less than or equal to 990px | Medium devices (landscape tablets, 992px and down)------------- */
-@media screen and (max-width: 990px) {
-  .our-price {
-    height: auto !important;
-    margin: 4rem 0 !important;
-  }
-  .our-price .active {
-    margin: 2rem 0 !important;
-    transform: translateY(0px) !important;
-  }
 
-  .our-clients,
-.contact-us {
-    height: auto !important;
-    margin: 4rem 0;
-  }
+
+/* >>>>>>>>>>>>> Footer  Section CSS >>>>>>>>>>>>> */
+
+
+/* > ------------ Viewport greater than or equal to 1200px | Extra large devices (large laptops and desktops, 1200px and up)------------ */
+
+
+/* > -----X------ Viewport greater than or equal to 1200px | Extra large devices (large laptops and desktops, 1200px and up)------X----- */
+
+
+/* -> ------------- Viewport less than or equal to 1200px | Large devices (laptops/desktops, 1200px and down)------------- */
+
+
+/* -> ------X------ Viewport less than or equal to 1200px | Large devices (laptops/desktops, 1200px and down)------X------ */
+
+
+/* > ------------- Viewport less than or equal to 990px | Medium devices (landscape tablets, 992px and down)------------- */
+
+@media screen and (max-width: 990px) {
+    .our-price {
+        height: auto !important;
+        margin: 4rem 0 !important;
+    }
+    .our-price .active {
+        margin: 2rem 0 !important;
+        transform: translateY(0px) !important;
+    }
+    .our-clients,
+    .contact-us {
+        height: auto !important;
+        margin: 4rem 0;
+    }
 }
+
+
 /* > ------X------ Viewport less than or equal to 992px | Medium devices (landscape tablets, 992px and down)------X------ */
+
+
 /* -> ----------- Viewport less than or equal to 768px (Small devices (portrait tablets and large phones, 768px and down)) ----------- */
+
+
 /* -> -----X----- Viewport less than or equal to 768px (Small devices (portrait tablets and large phones, 768px and down)) -----X----- */
+
+
 /* > ----------- Viewport less than or equal to 576px | Extra small devices (phones, 576px and down)  ----------- */
+
+
 /* > -----X----- Viewport less than or equal to 576px | Extra small devices (phones, 576px and down)  -----X----- */
+
+
 /* > ----------- Viewport less than or equal to 320px | Extra small devices (iphones, 330px and down)  ----------- */
+
+
 /* > -----X----- Viewport less than or equal to 320px | Extra small devices (iphones, 330px and down)  -----X----- */
+
+
 /* >>>>> X >>>>> Footer  Section CSS >>>>> X >>>>> */
