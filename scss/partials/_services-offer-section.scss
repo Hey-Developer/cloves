@@ -1,0 +1,20 @@
+main .services-offer {
+    background: $primary-color-3;
+    padding: 3.25rem 0;
+    margin-bottom: 3.25rem;
+    .headings {
+        margin-bottom: 3.25rem;
+    }
+    .names h1 {
+        color: $primary-color-4;
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+    .service-icons {
+        color: $secondary-color-1;
+    }
+    .progress {
+        height: 0.8rem !important;
+        margin-bottom: 2rem !important;
+    }
+}

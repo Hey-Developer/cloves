@@ -1,0 +1,73 @@
+footer {
+    width: 100%;
+    height: auto;
+    padding: 5rem 0 1rem 0;
+    background: linear-gradient(to right, #1e5799 0%, #3ccdbc 0%, #16c9f6 100%);
+    position: relative;
+    h3 {
+        font-weight: bold;
+        font-size: 1.4rem;
+        margin-bottom: 1.5rem;
+        color: $primary-color-1;
+        text-shadow: 0 2px 5px rgba($color: #000000, $alpha: 0.4);
+    }
+    P {
+        color: $primary-color-1;
+        font-size: 0.95rem;
+    }
+    ul li {
+        font-size: 0.9rem;
+        line-height: 1.7;
+        font-weight: 400;
+        text-transform: capitalize;
+        a:hover {
+            color: $primary-color-2;
+        }
+    }
+    .news-letter-email {
+        border-radius: 6.25rem 0 0 6.25rem !important;
+        padding: 1.3rem !important;
+    }
+    .btn {
+        border-radius: 0 6.25rem 6.25rem 0 !important;
+        color: $primary-color-1 !important;
+        background: $primary-color-2 !important;
+        font-weight: 600;
+        letter-spacing: 0.1rem;
+        font-size: 0.9rem;
+        @include trn;
+        &:hover {
+            background: rgba($color: #000000, $alpha: 0.7) !important;
+        }
+    }
+     ::placeholder {
+        font-size: 0.9rem;
+    }
+    .copyright {
+        margin-bottom: -1rem;
+        i {
+            margin: 0 0.3rem -1rem;
+            font-size: 1.5rem;
+            cursor: pointer;
+            &:hover {
+                color: #cd201f;
+            }
+        }
+    }
+    #top-btn {
+        // display: none;
+        font-size: 1.1rem;
+        position: fixed;
+        bottom: 1.25rem;
+        right: 2.7rem;
+        z-index: 99;
+        border: none;
+        color: $primary-color-1;
+        background: linear-gradient(to right, #1e5799 0%, #3ccdbc 0%, #16c9f6 100%);
+        padding: 0.7rem 0.8rem;
+        border-radius: 50%;
+        &:hover {
+            background: $primary-color-4;
+        }
+    }
+}

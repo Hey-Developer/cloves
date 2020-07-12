@@ -1,0 +1,25 @@
+@mixin bd($width: 1px, $style: solid, $color: black) {
+    border: $width $style $color;
+}
+
+@mixin shadow( $x: 0, $y: 0, $blur: 20px, $spread: 0px, $color: rgba(0, 0, 0, 0.3)) {
+    box-shadow: $x $y $blur $spread $color;
+}
+
+@mixin trn($property: all, $time: 0.3s, $effect: linear) {
+    transition: $property $time $effect;
+}
+
+// Media Query
+@mixin media($breakpoint, $width: max) {
+    @if $width==max {
+        @media screen and (max-width: $breakpoint+px) {
+            @content;
+        }
+    }
+    @else if $width==min {
+        @media screen and (min-width: $breakpoint+px) {
+            @content;
+        }
+    }
+}

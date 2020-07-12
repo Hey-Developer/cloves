@@ -1,0 +1,23 @@
+main .features {
+    width: 100%;
+    height: auto;
+    margin: 6.25rem 0;
+    .feature-card {
+        background: $primary-color-1;
+        @include bd($color: #eee);
+        padding: 2rem !important;
+        border-radius: 0.4rem;
+        @include trn($effect: ease);
+        h2 {
+            font-size: 1.2rem;
+        }
+        &:hover {
+            @include shadow;
+            transform: translateY(-20px);
+            span i,
+            h2 {
+                color: $secondary-color-1;
+            }
+        }
+    }
+}

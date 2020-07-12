@@ -1,0 +1,163 @@
+header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient( 45deg, rgba(#147cf3, $alpha: 0.3), rgba(#1fc7f1, $alpha: 0.3)), url("../assets/BG-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(100% 0%, 100% 75%, 50% 100%, 0 75%, 0 0);
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0%;
+        bottom: 0%;
+        left: 0;
+        right: 0;
+        opacity: 0.3;
+        z-index: -1;
+        background: linear-gradient( to right, #1e5799 0%, #3ccdbce5 0%, #16c9f6 100%);
+    }
+    .navbar::before {
+        content: "";
+        position: absolute;
+        top: 0%;
+        bottom: 0%;
+        left: 0;
+        right: 0;
+        opacity: 0.3;
+        z-index: -1;
+        background: linear-gradient(to right, #1e5799 0%, #3ccdbc 0%, #16c9f6 100%);
+    }
+    .navbar .nav-item .nav-link {
+        padding: 0.2rem 0 !important;
+        margin: 1rem !important;
+        // background: #000;
+        display: inline-block;
+        color: $primary-color-1;
+        font-weight: bold;
+        position: relative;
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0px;
+            height: 3px;
+            width: 100%;
+            background: $primary-color-1;
+            transform: scaleX(0);
+            @include trn($effect: ease);
+        }
+        &::before {
+            bottom: 0px;
+            transform-origin: left;
+        }
+        &::after {
+            top: 0px;
+            transform-origin: right;
+        }
+        &:hover {
+            &::before,
+            &::after {
+                transform: scaleX(1);
+            }
+        }
+    }
+    .navbar-toggler {
+        outline: none !important;
+        span i {
+            outline: none;
+            font-size: 1.5rem;
+            color: $primary-color-1;
+        }
+    }
+    .menu-btn {
+        position: relative;
+        border: none;
+        outline: none;
+        height: 20px;
+        width: 28px;
+        padding: 0.4rem;
+        cursor: pointer;
+        background: transparent;
+        @include trn($effect: ease);
+        &__burger {
+            position: absolute;
+            right: 0;
+            top: 0.5rem;
+            width: 28px;
+            height: 3px;
+            background: $primary-color-1;
+            @include trn($effect: ease);
+            &::before {
+                content: "";
+                position: absolute;
+                top: -8px;
+                left: 0;
+                width: 100%;
+                height: 3px;
+                background: $primary-color-1;
+                @include trn($effect: ease);
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                top: 8px;
+                left: 0;
+                width: 100%;
+                height: 3px;
+                background: $primary-color-1;
+                @include trn($effect: ease);
+            }
+            &.open {
+                transform: rotate(360deg);
+                background: transparent;
+                &::before {
+                    transform: rotate(45deg) translate(5px, 8px);
+                }
+                &::after {
+                    width: 100%;
+                    transform: rotate(-45deg) translate(3px, -7px);
+                }
+            }
+        }
+    }
+    .header-section {
+        width: 100%;
+        height: inherit;
+        color: $primary-color-1;
+        .center-div {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            h1 {
+                font-size: 3rem;
+                letter-spacing: 0.5rem;
+            }
+            P {
+                font-size: 1.3rem;
+                letter-spacing: 0.3rem;
+                color: $primary-color-1;
+                padding: 0.625rem 0 1.25rem 0;
+            }
+            .cta a {
+                @include bd(1px,
+                solid,
+                $primary-color-1);
+                padding: 0.9rem 2.1rem;
+                outline: none;
+                font-weight: 400;
+                line-height: 1.4;
+                border-radius: 6.25rem;
+                text-align: center;
+                transition: 0.5s;
+                margin: 0 0.3rem;
+                &:hover {
+                    color: $secondary-color-1;
+                    background: $primary-color-1;
+                    @include shadow;
+                }
+            }
+        }
+    }
+}

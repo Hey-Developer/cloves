@@ -1,0 +1,90 @@
+/* * * * * * * * * * * Reset CSS * * * * * * * * * * */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* * * * * X * * * * * Reset CSS * * * * * X * * * * */
+
+@import "partials/variable";
+@import "partials/mixins";
+
+/* >>>>>>>>>>>>> Global CSS >>>>>>>>>>>>> */
+
+@import "partials/global";
+
+/* >>>>> X >>>>> Global CSS >>>>> X >>>>> */
+
+
+/* >>>>>>>>>>>>> Header CSS >>>>>>>>>>>>> */
+
+@import "partials/header";
+
+/* >>>>> X >>>>> Header CSS >>>>> X >>>>> */
+
+
+/* >>>>>>>>>>>>> Feature Section CSS >>>>>>>>>>>>> */
+
+@import "partials/feature-section";
+
+/* >>>>> X >>>>> Feature Section CSS >>>>> X >>>>> */
+
+
+/* >>>>>>>>>>>>> Services Offer Section CSS >>>>>>>>>>>>> */
+
+@import "partials/services-offer-section";
+
+/* >>>>> X >>>>> Services Offer Section CSS >>>>> X >>>>> */
+
+
+/* >>>>>>>>>>>>> Website Counter Section CSS >>>>>>>>>>>>> */
+
+@import "partials/website-counter-section";
+
+/* >>>>> X >>>>> Website Counter Section CSS >>>>> X >>>>> */
+
+
+/* >>>>>>>>>>>>> Our Pricing Section CSS >>>>>>>>>>>>> */
+
+@import "partials/pricing-section";
+
+/* >>>>> X >>>>> Our Pricing Section CSS >>>>> X >>>>> */
+
+
+/* >>>>>>>>>>>>> Our Client Section CSS >>>>>>>>>>>>> */
+
+@import "partials/our-client-section";
+
+/* >>>>> X >>>>> Our Client Section CSS >>>>> X >>>>> */
+
+
+/* >>>>>>>>>>>>> Our Client Section CSS >>>>>>>>>>>>> */
+
+@import "partials/contact-us-section";
+
+/* >>>>> X >>>>> Our Client Section CSS >>>>> X >>>>> */
+
+
+/* >>>>>>>>>>>>> News Letter  Section CSS >>>>>>>>>>>>> */
+
+@import "partials/newsletter-section";
+
+/* >>>>> X >>>>> News Letter  Section CSS >>>>> X >>>>> */
+
+
+/* >>>>>>>>>>>>> Footer  Section CSS >>>>>>>>>>>>> */
+
+@import "partials/footer";
+
+/* >>>>> X >>>>> Footer  Section CSS >>>>> X >>>>> */
+
+
+/* >>>>>>>>>>>>> Footer  Section CSS >>>>>>>>>>>>> */
+
+@import "partials/responsive";
+
+/* >>>>> X >>>>> Footer  Section CSS >>>>> X >>>>> */

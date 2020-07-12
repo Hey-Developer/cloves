@@ -1,0 +1,37 @@
+html {
+    scroll-behavior: smooth;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: $primary-color-1;
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: $primary-color-2;
+}
+
+h1 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 1.25rem 0 1rem 0;
+    line-height: 1.1;
+}
+
+h2 {
+    font-size: 1rem;
+    margin: 1.25rem 0 1rem 0;
+    font-weight: bold;
+    line-height: 1.1;
+    word-spacing: 4px;
+}

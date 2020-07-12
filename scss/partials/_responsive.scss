@@ -1,0 +1,52 @@
+/* > ------------ Viewport greater than or equal to 1200px | Extra large devices (large laptops and desktops, 1200px and up)------------ */
+
+@include media(1200, min) {}
+
+
+/* > -----X------ Viewport greater than or equal to 1200px | Extra large devices (large laptops and desktops, 1200px and up)------X----- */
+
+
+/* -> ------------- Viewport less than or equal to 1200px | Large devices (laptops/desktops, 1200px and down)------------- */
+
+
+/* -> ------X------ Viewport less than or equal to 1200px | Large devices (laptops/desktops, 1200px and down)------X------ */
+
+
+/* > ------------- Viewport less than or equal to 990px | Medium devices (landscape tablets, 992px and down)------------- */
+
+@include media(990) {
+    .our-price {
+        height: auto !important;
+        margin: 4rem 0 !important;
+        .active {
+            margin: 2rem 0 !important;
+            transform: translateY(0px) !important;
+        }
+    }
+    .our-clients,
+    .contact-us {
+        height: auto !important;
+        margin: 4rem 0;
+    }
+}
+
+
+/* > ------X------ Viewport less than or equal to 992px | Medium devices (landscape tablets, 992px and down)------X------ */
+
+
+/* -> ----------- Viewport less than or equal to 768px (Small devices (portrait tablets and large phones, 768px and down)) ----------- */
+
+
+/* -> -----X----- Viewport less than or equal to 768px (Small devices (portrait tablets and large phones, 768px and down)) -----X----- */
+
+
+/* > ----------- Viewport less than or equal to 576px | Extra small devices (phones, 576px and down)  ----------- */
+
+
+/* > -----X----- Viewport less than or equal to 576px | Extra small devices (phones, 576px and down)  -----X----- */
+
+
+/* > ----------- Viewport less than or equal to 320px | Extra small devices (iphones, 330px and down)  ----------- */
+
+
+/* > -----X----- Viewport less than or equal to 320px | Extra small devices (iphones, 330px and down)  -----X----- */

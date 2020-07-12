@@ -1,0 +1,31 @@
+main .newsletter {
+    width: 100%;
+    height: auto;
+    margin: 6rem auto;
+    .headings {
+        margin-bottom: 2.6rem;
+    }
+    .news-letter-email {
+        border-radius: 6.25rem 0 0 6.25rem !important;
+        padding: 1.3rem !important;
+        min-width: 9.3rem;
+        min-height: 3.7rem;
+    }
+    .btn {
+        border-radius: 0 6.25rem 6.25rem 0 !important;
+        color: $primary-color-1 !important;
+        background: $secondary-color-2 !important;
+        padding: 0.9rem !important;
+        min-width: 10rem !important;
+        font-weight: 600;
+        letter-spacing: 0.1rem;
+        font-size: 0.9rem;
+        @include trn;
+        &:hover {
+            background: darken($color: $secondary-color-2, $amount: 10) !important;
+        }
+    }
+     ::placeholder {
+        font-size: 0.9rem;
+    }
+}
